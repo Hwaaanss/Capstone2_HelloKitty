@@ -1,0 +1,35 @@
+{
+    "model": {
+        "embedding_size": 32,
+        "transformer_depth": 6,
+        "attention_heads": 8,
+        "attention_dropout": 0.1,
+        "ff_dropout": 0.1,
+        "optimizer": "AdamW",
+        "lr": 0.0001,
+        "epochs": 5,
+        "batch_size": 256,
+        "task": "regression",
+        "pretrain": false,
+        "verbose": 1
+    },
+    "llm": {
+        "api_key": "AIzaSyAk2SxeN3dzprBfLAyZsoudtQCJncoJmhA",
+        "model_name": "gemini-2.5-flash",
+        "temperature": 0.7,
+        "max_tokens": 1000,
+        "system_prompt": "You are an expert data scientist and marketing consultant about restaurant. You analyze 'model results' and provide 'actionable insights and recommending strategy' to attract more people in Korean. Do not use emoji."
+    },
+    "ui": {
+        "show_plots_popup": true,
+        "save_plots_image": true,
+        "plots_save_dir": "./plots",
+        "enable_streamlit_chat": true
+    },
+    "data": {
+        "dataset_dir": "./dataset",
+        "input_dynamic_size": true,
+        "target_columns": ["target"],
+        "feature_columns": []
+    }
+}
