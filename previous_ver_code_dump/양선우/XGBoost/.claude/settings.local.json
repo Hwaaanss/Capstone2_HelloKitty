@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/hwan/Documents/대학/2025-2/캡스톤디자인2/**)",
+      "Bash(mkdir:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

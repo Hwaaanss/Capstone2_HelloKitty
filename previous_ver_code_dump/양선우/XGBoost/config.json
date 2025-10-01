@@ -1,0 +1,38 @@
+{
+    "model": {
+        "lr": 0.001,
+        "epochs": 5000,
+        "task": "regression",
+        "verbose": 1,
+        "xgb_max_depth": 6,
+        "xgb_min_child_weight": 1.0,
+        "xgb_subsample": 0.8,
+        "xgb_colsample_bytree": 0.8,
+        "xgb_gamma": 0.0,
+        "xgb_reg_alpha": 0.0,
+        "xgb_reg_lambda": 1.0,
+        "xgb_scale_pos_weight": 1.0,
+        "xgb_tree_method": "hist",
+        "xgb_device": "cpu",
+        "xgb_eval_metric": "rmse"
+    },
+    "llm": {
+        "api_key": "AIzaSyAk2SxeN3dzprBfLAyZsoudtQCJncoJmhA",
+        "model_name": "gemini-2.5-flash",
+        "temperature": 0.7,
+        "max_tokens": 1000,
+        "system_prompt": "You are an expert data scientist and marketing consultant about restaurant. You analyze 'model results' and provide 'actionable insights and recommending strategy' to attract more people in Korean. Do not use emoji."
+    },
+    "ui": {
+        "show_plots_popup": true,
+        "save_plots_image": true,
+        "plots_save_dir": "./plots",
+        "enable_streamlit_chat": true
+    },
+    "data": {
+        "dataset_dir": "./dataset",
+        "input_dynamic_size": true,
+        "target_columns": ["RC_M1_SAA"],
+        "feature_columns": []
+    }
+}
