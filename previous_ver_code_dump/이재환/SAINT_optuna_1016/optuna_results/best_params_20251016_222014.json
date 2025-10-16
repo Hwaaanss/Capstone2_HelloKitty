@@ -1,0 +1,9 @@
+{
+    "embedding_size": 16,
+    "transformer_depth": 6,
+    "attention_heads": 8,
+    "attention_dropout": 0.14010687511125092,
+    "ff_dropout": 0.24175958754482296,
+    "learning_rate": 1.0793864615704983e-05,
+    "batch_size": 128
+}
