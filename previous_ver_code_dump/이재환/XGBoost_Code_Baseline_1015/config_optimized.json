@@ -1,0 +1,56 @@
+{
+    "model": {
+        "embedding_size": 32,
+        "transformer_depth": 6,
+        "attention_heads": 8,
+        "attention_dropout": 0.1,
+        "ff_dropout": 0.1,
+        "optimizer": "AdamW",
+        "scheduler": "StepLR",
+        "scheduler_step_size": 30,
+        "scheduler_gamma": 0.1,
+        "scheduler_patience": 10,
+        "scheduler_factor": 0.5,
+        "lr": 0.02576722691035902,
+        "epochs": 500,
+        "batch_size": 256,
+        "task": "regression",
+        "pretrain": false,
+        "verbose": 1,
+        "early_stopping": true,
+        "early_stopping_patience": 15,
+        "early_stopping_min_delta": 0.0001,
+        "xgb_max_depth": 6,
+        "xgb_min_child_weight": 6.665204949539892,
+        "xgb_subsample": 0.8895578936851467,
+        "xgb_colsample_bytree": 0.5581324615373104,
+        "xgb_gamma": 0.17534896371068123,
+        "xgb_reg_alpha": 1.9011650019064708,
+        "xgb_reg_lambda": 6.1842795607039776,
+        "xgb_scale_pos_weight": 1.0,
+        "xgb_tree_method": "hist",
+        "xgb_device": "cpu",
+        "xgb_eval_metric": "rmse"
+    },
+    "llm": {
+        "api_key": "AIzaSyAk2SxeN3dzprBfLAyZsoudtQCJncoJmhA",
+        "model_name": "gemini-2.5-flash",
+        "temperature": 0.7,
+        "max_tokens": 1000,
+        "system_prompt": "You are a professional marketing strategist specialized in restaurant business with data science knowledge. You can interpret data and metrics to create practical marketing strategies. Your role is NOT to explain data analysis or model predictions, but to provide actionable marketing recommendations based on the insights. Focus on business strategy, customer behavior, promotional tactics, and operational improvements that can drive results. Think like a marketer who uses data as a tool, not as a data scientist who happens to know marketing. Write in Korean. Do not use emoji."
+    },
+    "ui": {
+        "show_plots_popup": true,
+        "save_plots_image": true,
+        "plots_save_dir": "./plots",
+        "enable_streamlit_chat": true
+    },
+    "data": {
+        "dataset_dir": "./dataset",
+        "input_dynamic_size": true,
+        "target_columns": [
+            "RC_M1_SAA"
+        ],
+        "feature_columns": []
+    }
+}
