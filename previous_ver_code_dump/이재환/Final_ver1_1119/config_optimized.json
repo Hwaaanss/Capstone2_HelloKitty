@@ -1,0 +1,70 @@
+{
+    "model": {
+        "embedding_size": 32,
+        "transformer_depth": 6,
+        "attention_heads": 8,
+        "attention_dropout": 0.1,
+        "ff_dropout": 0.1,
+        "optimizer": "AdamW",
+        "scheduler": "StepLR",
+        "scheduler_step_size": 30,
+        "scheduler_gamma": 0.1,
+        "scheduler_patience": 10,
+        "scheduler_factor": 0.5,
+        "lr": 0.08734146328520287,
+        "epochs": 500,
+        "batch_size": 256,
+        "task": "regression",
+        "pretrain": false,
+        "verbose": 1,
+        "early_stopping": true,
+        "early_stopping_patience": 15,
+        "early_stopping_min_delta": 0.0001,
+        "xgb_max_depth": 5,
+        "xgb_min_child_weight": 5.545872266958611,
+        "xgb_subsample": 0.9395431708250973,
+        "xgb_colsample_bytree": 0.5562880757006453,
+        "xgb_gamma": 0.3500073863194122,
+        "xgb_reg_alpha": 3.2998372663310773,
+        "xgb_reg_lambda": 1.8527105982664152,
+        "xgb_scale_pos_weight": 1.0,
+        "xgb_tree_method": "hist",
+        "xgb_device": "cpu",
+        "xgb_eval_metric": "rmse",
+        "lgbm_num_leaves": 31,
+        "lgbm_max_depth": -1,
+        "lgbm_min_child_samples": 20,
+        "lgbm_subsample": 0.8,
+        "lgbm_colsample_bytree": 0.8,
+        "lgbm_reg_alpha": 0.0,
+        "lgbm_reg_lambda": 1.0,
+        "catboost_depth": 6,
+        "catboost_l2_leaf_reg": 3.0,
+        "catboost_border_count": 128,
+        "meta_model_type": "xgboost",
+        "meta_model_epochs": 100,
+        "meta_model_lr": 0.01,
+        "meta_model_max_depth": 3
+    },
+    "llm": {
+        "api_key": "AIzaSyAk2SxeN3dzprBfLAyZsoudtQCJncoJmhA",
+        "model_name": "gemini-2.5-flash",
+        "temperature": 0.7,
+        "max_tokens": 2000,
+        "system_prompt": "당신은 10년 경력의 음식점 경영 컨설턴트입니다. 서울 성동구 소재 음식점 300곳 이상을 성공적으로 컨설팅한 경험이 있으며, 데이터 기반 마케팅 전략 수립 전문가입니다.\n\n**당신의 역할**:\n- 점주가 내일부터 실행할 수 있는 구체적 액션 제시\n- 예상 비용과 효과를 명시한 실용적 조언\n- 업계 트렌드와 성공 사례 활용\n\n**금지 사항**:\n- 데이터 수치 나열 (이미 분석 완료됨)\n- 추상적 조언 (\"고객 만족도 향상\" 같은 일반론)\n- \"~한 것으로 보입니다\" 같은 분석적 표현\n\n**응답 언어**: 한국어만 사용. 이모지 사용 금지."
+    },
+    "ui": {
+        "show_plots_popup": true,
+        "save_plots_image": true,
+        "plots_save_dir": "./plots",
+        "enable_streamlit_chat": true
+    },
+    "data": {
+        "dataset_dir": "./dataset",
+        "input_dynamic_size": true,
+        "target_columns": [
+            "RC_M1_SAA"
+        ],
+        "feature_columns": []
+    }
+}
