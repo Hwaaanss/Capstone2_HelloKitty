@@ -17,7 +17,7 @@
         "xgb_eval_metric": "rmse"
     },
     "llm": {
-        "api_key": "AIzaSyAk2SxeN3dzprBfLAyZsoudtQCJncoJmhA",
+        "api_key": "ENTER_YOUR_API_KEY",
         "model_name": "gemini-2.5-flash",
         "temperature": 0.7,
         "max_tokens": 2000,
